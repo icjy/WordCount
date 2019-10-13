@@ -1,0 +1,48 @@
+单词总数:34
+单词:daddy   频数:5
+单词:mummy   频数:5
+单词:naive   频数:3
+单词:hello   频数:2
+单词:name   频数:2
+单词:newyork   频数:2
+单词:sister   频数:2
+单词:windows2000   频数:2
+单词:windows95   频数:2
+单词:windows98   频数:2
+================4个单词及其词频================
+单词:daddy   频数:5
+单词:mummy   频数:5
+单词:naive   频数:3
+单词:hello   频数:2
+================基础功能================
+行数:9
+================长度为4的所有词组================
+词组:brother brother naive hello   频数:1
+词组:brother naive hello sister   频数:1
+词组:daddy daddy daddy daddy   频数:2
+词组:daddy daddy daddy newyork   频数:1
+词组:daddy daddy newyork windows95   频数:1
+词组:daddy newyork windows95 windows98   频数:1
+词组:hello name newyork hhhhh123   频数:1
+词组:hello sister name windows95   频数:1
+词组:hhhhh123 naive naive mummy   频数:1
+词组:monday tuesday wednesday thursday   频数:1
+词组:mummy daddy daddy daddy   频数:1
+词组:mummy mummy daddy daddy   频数:1
+词组:mummy mummy mummy daddy   频数:1
+词组:mummy mummy mummy mummy   频数:2
+词组:naive hello sister name   频数:1
+词组:naive mummy mummy mummy   频数:1
+词组:naive naive mummy mummy   频数:1
+词组:name newyork hhhhh123 naive   频数:1
+词组:name windows95 windows98 windows2000   频数:1
+词组:newyork hhhhh123 naive naive   频数:1
+词组:newyork windows95 windows98 windows2000   频数:1
+词组:sister brother brother naive   频数:1
+词组:sister name windows95 windows98   频数:1
+词组:windows2000 monday tuesday wednesday   频数:1
+词组:windows2000 sister brother brother   频数:1
+词组:windows95 windows98 windows2000 monday   频数:1
+词组:windows95 windows98 windows2000 sister   频数:1
+词组:windows98 windows2000 monday tuesday   频数:1
+词组:windows98 windows2000 sister brother   频数:1
