@@ -14,51 +14,86 @@ namespace WordCount
         {
 
             //默认的文件路径
-            string ipath= @"H:\WordCount\WordCount\bin\Debug\input.txt";
+            string ipath= @"H:\WordCount\WordCount\bin\Debug\Camellias.txt";
             //默认的输出路径
             string opath = @"H:\WordCount\WordCount\bin\Debug\output.txt";
             //StreamReader sR = new StreamReader(@"C:\Users\Administrator\Desktop\Camellias2.txt", Encoding.UTF8);
             Basic mycount = new Basic();
             Extend mycount2 = new Extend();
 
-            int m = 1;
+            int m = 4;
             int n = 10;
-            
+
             for (int len = 0; len < args.Length; len++)
             {
                 if (args[len] == "-i")//文件路径
                 {
-                    ipath = args[len + 1];
+                    if (len==args.Length-1 || args[len + 1] == "" || args[len + 1] == null || args[len+1] == "-o" || args[len + 1] == "-m" || args[len + 1] == "-n")
+                    {
+                        Console.WriteLine("参数i不能为空！请重新输入！");
+                        break;
+                    }
+                    else
+                    {
+                        ipath = args[len + 1];
+                    }
 
                 }
                 else if (args[len] == "-o")//存储路径
                 {
-                    opath = args[len + 1];
-                    mycount.setOutput(opath);
-                    mycount2.setOutput(opath);
+                    if (len == args.Length - 1 || args[len + 1] == "" || args[len + 1] == null || args[len + 1] == "-m" || args[len + 1] == "-n")
+                    {
+                        Console.WriteLine("参数o不能为空！请重新输入！");
+                        break;
+                    }
+                    else
+                    {
+                        opath = args[len + 1];
+                        mycount.setOutput(opath);
+                        mycount2.setOutput(opath);
 
-                    mycount.lineCount(ipath);
-                    mycount.charCount(ipath);
-                    mycount.wordCount(ipath);
-                    List<string> list1 = mycount.splitWord(ipath);
-                    mycount.printWord(list1);
+                        mycount.lineCount(ipath);
+                        mycount.charCount(ipath);
+                        mycount.wordCount(ipath);
+                        List<string> list1 = mycount.splitWord(ipath);
+                        mycount.printWord(list1);
+                    }
+                    
                 }
                 else if (args[len] == "-m")//词组长度
                 {
-                    m = int.Parse(args[len + 1]);
-                    mycount2.printPhrase(ipath, m);
+                    if (len == args.Length - 1 ||args[len + 1] == "" || args[len + 1] == null || args[len + 1] == "-o" || args[len + 1] == "-n")
+                    {
+                        Console.WriteLine("参数m不能为空！请重新输入！");
+                        break;
+                    }
+                    else
+                    {
+                        m = int.Parse(args[len + 1]);
+                        mycount2.printPhrase(ipath, m);
+                    }
+                    
                 }
                 else if (args[len] == "-n")//单词数量
-                {
-                    n = int.Parse(args[len + 1]);
-                    List<string> list2 = mycount.splitWord(ipath);
-                    mycount.printWord(list2,n);
+                    {
+                    if (len == args.Length - 1 ||args[len + 1] == "" || args[len + 1] == null || args[len + 1] == "-m" || args[len + 1] == "-o")
+                    {
+                        Console.WriteLine("参数n不能为空！请重新输入！");
+                        break;
+                    }
+                    else
+                    {
+                        n = int.Parse(args[len + 1]);
+                        List<string> list2 = mycount.splitWord(ipath);
+                        mycount.printWord(list2, n);
+                    }
+                    
+
+                    }
 
                 }
-                
+
             }
-            
-        }
 
     }
 
@@ -239,7 +274,7 @@ namespace WordCount
             {
                 Console.WriteLine("参数n超出索引范围！请重新输入！");
                 mycount2.storeTest("参数n超出索引范围！请重新输入！",opath);
-
+                return;
             }
             else
             {
