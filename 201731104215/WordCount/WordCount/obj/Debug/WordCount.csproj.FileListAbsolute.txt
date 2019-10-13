@@ -19,3 +19,10 @@ H:\WordCount\WordCount\obj\Debug\WordCount.csprojResolveAssemblyReference.cache
 H:\WordCount\WordCount\obj\Debug\WordCount.csproj.CoreCompileInputs.cache
 H:\WordCount\WordCount\obj\Debug\WordCount.exe
 H:\WordCount\WordCount\obj\Debug\WordCount.pdb
+D:\Documents\Tencent Files\949166887\FileRecv\WordCount(1)\WordCount\WordCount\bin\Debug\WordCount.exe.config
+D:\Documents\Tencent Files\949166887\FileRecv\WordCount(1)\WordCount\WordCount\bin\Debug\WordCount.exe
+D:\Documents\Tencent Files\949166887\FileRecv\WordCount(1)\WordCount\WordCount\bin\Debug\WordCount.pdb
+D:\Documents\Tencent Files\949166887\FileRecv\WordCount(1)\WordCount\WordCount\obj\Debug\WordCount.csprojAssemblyReference.cache
+D:\Documents\Tencent Files\949166887\FileRecv\WordCount(1)\WordCount\WordCount\obj\Debug\WordCount.csproj.CoreCompileInputs.cache
+D:\Documents\Tencent Files\949166887\FileRecv\WordCount(1)\WordCount\WordCount\obj\Debug\WordCount.exe
+D:\Documents\Tencent Files\949166887\FileRecv\WordCount(1)\WordCount\WordCount\obj\Debug\WordCount.pdb

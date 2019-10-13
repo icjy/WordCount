@@ -17,7 +17,7 @@ namespace WordCount
             string ipath= @"H:\WordCount\WordCount\bin\Debug\Camellias.txt";
             //默认的输出路径
             string opath = @"H:\WordCount\WordCount\bin\Debug\output.txt";
-            //StreamReader sR = new StreamReader(@"C:\Users\Administrator\Desktop\Camellias2.txt", Encoding.UTF8);
+           
             Basic mycount = new Basic();
             Extend mycount2 = new Extend();
 
@@ -111,7 +111,6 @@ namespace WordCount
         }
 
         Extend mycount2 = new Extend();
-        //StreamWriter consoleWriter = new StreamWriter(@"output.txt");//E:\VSProject\WordCount\WordCount\bin\Debug
 
 
         //统计行数
@@ -368,14 +367,6 @@ namespace WordCount
             }
         }
 
-        //public void WriteLine(string str)
-        //{
-
-        //    consoleWriter.WriteLine(str);
-        //    Console.WriteLine(str);
-        //    consoleWriter.Flush();
-        //}
-
     }
 
     public class Extend
@@ -465,25 +456,4 @@ namespace WordCount
 
         }
     }
-    //class Outputw
-    //{
-    //    static string output;
-    //    public String getOutput()
-    //    {
-    //        return output;
-    //    }
-
-    //    public void setOutput(String output)
-    //    {
-    //        this.output = output;
-    //    }
-    //    StreamWriter consoleWriter = new StreamWriter(output);
-    //    public void WriteLine(string str)
-    //    {
-
-    //        consoleWriter.WriteLine(str);
-    //        Console.WriteLine(str);
-    //        consoleWriter.Flush();
-    //    }
-    //}
 }
